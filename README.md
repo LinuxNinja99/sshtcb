@@ -1,4 +1,8 @@
 # sshtcb1928
 This is an in-browser way to access "blocked" sites.\
-*blocked refers to sites blacklisted by router*\
-Under any circumstances, this code may be "shared" for others to use. If editing the code and redistributing, credit must be provided to the original author. Before editing or  redistributing, or changing in any way, read the LICENSE.
+*blocked refers to sites blacklisted by router*
+
+LICENSE:\
+The term "code" referes to the application and its source code.\
+Under any circumstances, this code
+MAY NOT be shared without permission fromhe OWNER. This  MAY NOT be used commercially. This code MAY NOT be redistributed, edited, or viewed without the permission from the OWNER.
