@@ -2,9 +2,4 @@
 This is an in-browser way to access "blocked" sites.\
 *blocked refers to sites blacklisted by router*
 
-Created by "LinuxNinja99"
-
-LICENSE:\
-The term "code" referes to the application and its source code.\
-Under any circumstances, this code
-This code MAY NOT be used COMMERCIALLY.
+-LinuxNinja99
