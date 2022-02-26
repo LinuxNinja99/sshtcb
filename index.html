@@ -8,13 +8,25 @@
       <h3 style="font-family:verdana;">Work in progress! Check back later.
       </h3>
       <script>
+         const Config = {
+  apiKey: "AIzaSyBJryNuKe3EsfkAIM41peATaO4Kybq4sFg",
+  authDomain: "sshtcb.firebaseapp.com",
+  projectId: "sshtcb",
+  storageBucket: "sshtcb.appspot.com",
+  messagingSenderId: "1066557088064",
+  appId: "1:1066557088064:web:ba547ff13881dbd2c01aa5",
+  measurementId: "G-CEG9HSP3PY"
+};
+var log = firebase.database().ref('log');
          $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
          data = data.trim().split('\n').reduce(function(obj, pair) {
          pair = pair.split('=');
          return obj[pair[0]] = pair[1], obj;
          }, {});
-         console.log(data);
-         });
+         var newLog = log.push();
+         newLog.set({
+        object: $(data)
+      });         });
       </script>
    </body>
 </html>
