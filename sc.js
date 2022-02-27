@@ -16,6 +16,6 @@ firebase.initializeApp({
          }, {});
          var newLog = log.push();
          newLog.set({
-         .$(data)
+         object: $(data)
         });  
 });
