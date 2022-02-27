@@ -7,8 +7,8 @@
       <h3 style="font-family:verdana;">Work in progress! Check back later.
       </h3>
       <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-      <script type='module'>
-       const firebaseConfig = {
+      <script>
+       firebase.initializeApp({
          apiKey: "AIzaSyBJryNuKe3EsfkAIM41peATaO4Kybq4sFg",
          authDomain: "sshtcb.firebaseapp.com",
          databaseURL: "https://sshtcb-default-rtdb.firebaseio.com",
@@ -18,10 +18,6 @@
           appId: "1:1066557088064:web:ba547ff13881dbd2c01aa5",
           measurementId: "G-CEG9HSP3PY"
        };
-         const app = initializeApp(firebaseConfig);
-         app.initializeApp();
-      </script>
-      <script>
          var log = firebase.database().ref('log');
          $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
          data = data.trim().split('\n').reduce(function(obj, pair) {
