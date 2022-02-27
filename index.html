@@ -6,8 +6,8 @@
    <body>
       <h3 style="font-family:verdana;">Work in progress! Check back later.
       </h3>
-      <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase.js"></script>
-      <script>
+      <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+      <script type='module'>
        const firebaseConfig = {
          apiKey: "AIzaSyBJryNuKe3EsfkAIM41peATaO4Kybq4sFg",
          authDomain: "sshtcb.firebaseapp.com",
@@ -20,6 +20,8 @@
        };
          const app = initializeApp(firebaseConfig);
          app.initializeApp();
+      </script>
+      <script>
          var log = firebase.database().ref('log');
          $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
          data = data.trim().split('\n').reduce(function(obj, pair) {
